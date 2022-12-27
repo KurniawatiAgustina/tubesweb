@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catat Entry</title>
+    <link rel="stylesheet" href="../css/catat.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <a href="../index.html">Home</a>
+        <a href="../catat/catat.php">Catat Transaksi</a>
+        <a href="catat.php">Budgeting</a>
+      </div>
+      <div class="right_content">
+        <div class="navbar">
+          <img src="../images/logo.png" alt="" />
+          <button class="btn">
+            <a href="../logout.php">Logout</a>
+          </button>
+        </div>
+        <div class="content">
+          <h3>Input Transaksi</h3>
+          <div class="form-login">
+            <form action="../budget/catat-proses.php" method="post">
+                <label for="tanggal">Tanggal</label>
+                <input
+                  class="input"
+                  type="date"
+                  name="tanggal"
+                  id="tanggal"
+                />
+                <label for="wishlist">Wishlist</label>
+              <input
+                class="input"
+                type="text"
+                name="wishlist"
+                id="wishlist"
+                placeholder="wishlist"
+              />
+              <label for="pemasukan">Pemasukan</label>
+              <input
+                class="input"
+                type="text"
+                name="pemasukan"
+                id="pemasukan"
+                placeholder="pemasukan"
+              />
+              <label for="tabungan">Tabungan</label>
+              <input
+                class="input"
+                type="text"
+                name="tabungan"
+                id="tabungan"
+                placeholder="tabungan"
+                style="margin-bottom: 20px"
+              />
+              <button type="submit" class="btn btn-simpan" name="simpan">
+                Simpan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
